@@ -28,29 +28,75 @@
 
   <section class="panel">
     <div class="panel-head">
-      <h2>P&amp;L over time</h2>
-      <div class="seg" role="group" aria-label="Chart view">
-        <button type="button" data-view="total" aria-pressed="true">Total</button>
-        <button type="button" data-view="each" aria-pressed="false">By strategy</button>
+      <h2>Cumulative P&amp;L</h2>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Time range">
+          <button type="button" data-range="24h" aria-pressed="false">24H</button>
+          <button type="button" data-range="7d" aria-pressed="false">7D</button>
+          <button type="button" data-range="all" aria-pressed="true">All</button>
+        </div>
+        <div class="seg" role="group" aria-label="Chart view">
+          <button type="button" data-view="total" aria-pressed="true">Total</button>
+          <button type="button" data-view="each" aria-pressed="false">By strategy</button>
+        </div>
       </div>
     </div>
-    <div id="chart" class="chart" role="img" aria-label="P&amp;L over time"></div>
+    <div id="chart" class="chart" role="img" aria-label="Cumulative P&amp;L over time"></div>
     <div id="legend" class="legend"></div>
   </section>
 
+  <div class="pair">
+    <section class="panel">
+      <div class="panel-head"><h2>Daily P&amp;L</h2><span class="hint">All strategies, by UTC day</span></div>
+      <div id="bars" class="chart" role="img" aria-label="P&amp;L per day"></div>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><h2>Drawdown</h2><span class="hint">Distance below the running peak</span></div>
+      <div id="dd" class="chart" role="img" aria-label="Drawdown over time"></div>
+    </section>
+  </div>
+
   <section>
     <div class="section-head">
-      <h2>Strategies</h2>
-      <div class="seg" role="group" aria-label="Sort strategies">
-        <button type="button" data-sort="pnl" aria-pressed="true">By P&amp;L</button>
-        <button type="button" data-sort="label" aria-pressed="false">By name</button>
+      <h2>Strategy breakdown</h2>
+      <span class="hint">Click a column to sort, or a row for details</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead id="thead"></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Strategies</h2></div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="panel detail" id="detail">
+    <div class="detail-head">
+      <div>
+        <div class="detail-title"><h2 id="detail-title" class="big"></h2><span id="detail-status"></span></div>
+        <p class="hint" id="detail-sub"></p>
+      </div>
+      <label class="picker"><span class="hint">Strategy</span> <select id="pick"></select></label>
+    </div>
+    <div class="detail-grid">
+      <dl class="facts wide" id="detail-facts"></dl>
+      <div>
+        <h3 class="mini">Cumulative P&amp;L</h3>
+        <div id="detail-chart" class="chart" role="img" aria-label="Strategy P&amp;L over time"></div>
+        <h3 class="mini">Daily P&amp;L</h3>
+        <div id="detail-bars" class="chart" role="img" aria-label="Strategy P&amp;L per day"></div>
       </div>
     </div>
-    <div class="cards" id="cards"></div>
   </section>
 
   <footer>
     <p id="note"></p>
+    <p class="fine">Win rate, profit factor and average per trade count settled trades only; strategies that hold positions
+      rather than settle trades show "—". Daily values are end-of-day (UTC) P&amp;L, with today running to the latest update.</p>
     <p class="fine">Strategy names are placeholders. Values are hypothetical and are not investment advice.</p>
   </footer>
 </main>
