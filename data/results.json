@@ -1,0 +1,92 @@
+{
+ "updated": "2026-10-30T17:43:29Z",
+ "note": "Paper trading only: no real orders are placed and no real money is at risk. P&L is hypothetical, in US dollars, after modeled fees, since each strategy's paper record began.",
+ "strategies": [
+  {
+   "label": "Strategy A",
+   "pnl": -2.73,
+   "trades": 6,
+   "open": 2,
+   "since": "2026-10-21T19:38:00Z",
+   "as_of": "2026-10-30T14:00:00Z"
+  },
+  {
+   "label": "Strategy B",
+   "pnl": 2.84,
+   "trades": 2,
+   "open": 2,
+   "since": "2026-10-21T19:38:00Z",
+   "as_of": "2026-10-30T12:00:00Z"
+  },
+  {
+   "label": "Strategy C",
+   "pnl": 0.0,
+   "trades": 0,
+   "open": 0,
+   "since": "2026-10-21T19:38:00Z",
+   "as_of": null
+  },
+  {
+   "label": "Strategy D",
+   "pnl": 0.0,
+   "trades": 0,
+   "open": 0,
+   "since": "2026-10-21T19:38:00Z",
+   "as_of": null
+  },
+  {
+   "label": "Strategy E",
+   "pnl": 3.79,
+   "trades": 2,
+   "open": 0,
+   "since": "2026-10-14T15:09:07Z",
+   "as_of": "2026-10-30T17:43:24Z"
+  },
+  {
+   "label": "Strategy F",
+   "pnl": -1.26,
+   "trades": 22,
+   "open": 0,
+   "since": "2026-10-15T06:01:52Z",
+   "as_of": "2026-10-30T15:30:06Z"
+  },
+  {
+   "label": "Strategy G",
+   "pnl": 0.73,
+   "trades": 3,
+   "open": 0,
+   "since": "2026-10-15T06:01:52Z",
+   "as_of": "2026-10-30T15:30:06Z"
+  },
+  {
+   "label": "Strategy H",
+   "pnl": -0.12,
+   "trades": 20,
+   "open": 0,
+   "since": "2026-10-15T06:01:52Z",
+   "as_of": "2026-10-30T15:30:06Z"
+  },
+  {
+   "label": "Strategy I",
+   "pnl": -92.39,
+   "trades": 2617,
+   "open": 0,
+   "since": "2026-10-15T06:01:52Z",
+   "as_of": "2026-10-30T15:30:06Z"
+  }
+ ],
+ "history": [
+  {
+   "t": "2026-10-30T17:43:29Z",
+   "Strategy A": -2.73,
+   "Strategy B": 2.84,
+   "Strategy C": 0.0,
+   "Strategy D": 0.0,
+   "Strategy E": 3.79,
+   "Strategy F": -1.26,
+   "Strategy G": 0.73,
+   "Strategy H": -0.12,
+   "Strategy I": -92.39
+  }
+ ]
+}

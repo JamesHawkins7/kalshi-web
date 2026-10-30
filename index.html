@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta name="description" content="Live paper-trading results per strategy.">
+<title>Strategy Results</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232f6fb3'/%3E%3Cpath d='M3 11l3-3 2 2 5-5' stroke='white' stroke-width='1.6' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <div>
+      <h1>Strategy results</h1>
+      <p class="sub">How each strategy is doing right now, updated automatically.</p>
+    </div>
+    <div class="status">
+      <span class="badge">Paper trading · no real money</span>
+      <span class="live" id="live"><span class="dot"></span><span id="updated">Loading…</span></span>
+    </div>
+  </header>
+
+  <section class="tiles" id="tiles" aria-label="Totals"></section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>P&amp;L over time</h2>
+      <div class="seg" role="group" aria-label="Chart view">
+        <button type="button" data-view="total" aria-pressed="true">Total</button>
+        <button type="button" data-view="each" aria-pressed="false">By strategy</button>
+      </div>
+    </div>
+    <div id="chart" class="chart" role="img" aria-label="P&amp;L over time"></div>
+    <div id="legend" class="legend"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Strategies</h2>
+      <div class="seg" role="group" aria-label="Sort strategies">
+        <button type="button" data-sort="pnl" aria-pressed="true">By P&amp;L</button>
+        <button type="button" data-sort="label" aria-pressed="false">By name</button>
+      </div>
+    </div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <footer>
+    <p id="note"></p>
+    <p class="fine">Strategy names are placeholders. Values are hypothetical and are not investment advice.</p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
