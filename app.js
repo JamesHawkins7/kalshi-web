@@ -201,14 +201,14 @@
       var head = el("div", "card-head");
       head.appendChild(el("h3", null, s.label));
       var waiting = s.trades === 0;
-      head.appendChild(el("span", "pill " + (waiting ? "wait" : s.open > 0 ? "open" : "idle"),
-        waiting ? "No trades yet" : s.open > 0 ? "In a position" : "Flat"));
+      head.appendChild(el("span", "pill " + (s.stopped ? "stopped" : waiting ? "wait" : s.open > 0 ? "open" : "idle"),
+        s.stopped ? "Stopped" : waiting ? "No trades yet" : s.open > 0 ? "In a position" : "Flat"));
       c.appendChild(head);
       c.appendChild(el("div", "pnl " + tone(s.pnl), usd(s.pnl)));
       c.appendChild(spark(s, history));
       var dl = el("dl", "facts");
       [["Trades", s.trades.toLocaleString("en-US")], ["Open", String(s.open)], ["Since", day(s.since)],
-       ["Last activity", s.as_of ? ago(s.as_of) : "—"]].forEach(function (f) {
+       s.stopped ? ["Stopped", day(s.stopped)] : ["Last activity", s.as_of ? ago(s.as_of) : "—"]].forEach(function (f) {
         var w = el("div");
         w.appendChild(el("dt", null, f[0]));
         var dd = el("dd", null, f[1]);

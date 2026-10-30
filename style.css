@@ -76,6 +76,7 @@ h3 { font-size: 15px; margin: 0; font-weight: 600; }
 .card-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .pill { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--muted); white-space: nowrap; }
 .pill.open { background: var(--accent-soft); color: var(--accent); }
+.pill.stopped { background: transparent; box-shadow: inset 0 0 0 1px var(--muted); }
 .pnl { font-size: 26px; font-weight: 650; letter-spacing: -0.01em; margin-top: 8px; }
 .spark { display: block; width: 100%; height: 44px; margin: 8px 0 10px; }
 .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; margin: 0; padding-top: 10px; border-top: 1px solid var(--line); }
