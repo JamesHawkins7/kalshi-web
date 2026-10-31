@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T00:17:01Z",
+ "updated": "2026-10-31T00:32:51Z",
  "note": "Paper trading only: no real orders are placed and no real money is at risk. P&L is hypothetical, in US dollars, after modeled fees, since each strategy's paper record began.",
  "strategies": [
   {
@@ -288,7 +288,7 @@
    "trades": 2,
    "open": 0,
    "since": "2026-10-14T15:09:07Z",
-   "as_of": "2026-10-31T00:16:03Z",
+   "as_of": "2026-10-31T00:32:05Z",
    "stopped": null,
    "wins": 2,
    "losses": 0,
@@ -393,7 +393,7 @@
    "trades": 22,
    "open": 0,
    "since": "2026-10-15T06:01:52Z",
-   "as_of": "2026-10-30T17:26:37Z",
+   "as_of": "2026-10-30T20:15:00Z",
    "stopped": "2026-10-30T20:15:00Z",
    "wins": 0,
    "losses": 22,
@@ -493,7 +493,7 @@
    "trades": 3,
    "open": 0,
    "since": "2026-10-15T06:01:52Z",
-   "as_of": "2026-10-30T17:26:37Z",
+   "as_of": "2026-10-30T20:15:00Z",
    "stopped": "2026-10-30T20:15:00Z",
    "wins": 1,
    "losses": 2,
@@ -593,7 +593,7 @@
    "trades": 20,
    "open": 0,
    "since": "2026-10-15T06:01:52Z",
-   "as_of": "2026-10-30T17:26:37Z",
+   "as_of": "2026-10-30T20:15:00Z",
    "stopped": "2026-10-30T20:15:00Z",
    "wins": 1,
    "losses": 19,
@@ -689,16 +689,16 @@
   },
   {
    "label": "Strategy I",
-   "pnl": -93.3,
-   "trades": 2637,
-   "open": 20,
+   "pnl": -95.06,
+   "trades": 2660,
+   "open": 0,
    "since": "2026-10-15T06:01:52Z",
-   "as_of": "2026-10-30T17:26:37Z",
+   "as_of": "2026-10-30T20:00:00Z",
    "stopped": "2026-10-30T20:00:00Z",
-   "wins": 71,
-   "losses": 2546,
-   "gross_win": 65.23,
-   "gross_loss": 158.53,
+   "wins": 72,
+   "losses": 2588,
+   "gross_win": 66.12,
+   "gross_loss": 161.18,
    "daily": [
     {
      "d": "2026-10-15",
@@ -777,12 +777,12 @@
     },
     {
      "d": "2026-10-30",
-     "eq": -93.3,
-     "n": 175
+     "eq": -95.06,
+     "n": 198
     },
     {
      "d": "2026-10-31",
-     "eq": -93.3,
+     "eq": -95.06,
      "n": 0
     }
    ]
@@ -793,7 +793,7 @@
    "trades": 5,
    "open": 5,
    "since": "2026-10-30T21:00:00Z",
-   "as_of": "2026-10-31T00:10:01Z",
+   "as_of": "2026-10-31T00:25:02Z",
    "stopped": null,
    "wins": 0,
    "losses": 0,
@@ -903,7 +903,7 @@
    "Strategy J": 0.0
   },
   {
-   "t": "2026-10-31T00:17:01Z",
+   "t": "2026-10-31T00:32:51Z",
    "Strategy A": -2.73,
    "Strategy B": 3.16,
    "Strategy C": 0.0,
@@ -912,7 +912,7 @@
    "Strategy F": -1.26,
    "Strategy G": 0.73,
    "Strategy H": -0.12,
-   "Strategy I": -93.3,
+   "Strategy I": -95.06,
    "Strategy J": 0.0
   }
  ]
