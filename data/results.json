@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T09:17:00Z",
+ "updated": "2026-10-31T09:32:15Z",
  "note": "Paper trading only: no real orders are placed and no real money is at risk. P&L is hypothetical, in US dollars, after modeled fees, since each strategy's paper record began.",
  "strategies": [
   {
@@ -288,7 +288,7 @@
    "trades": 2,
    "open": 0,
    "since": "2026-10-14T15:09:07Z",
-   "as_of": "2026-10-31T09:16:51Z",
+   "as_of": "2026-10-31T09:31:56Z",
    "stopped": null,
    "wins": 2,
    "losses": 0,
@@ -793,7 +793,7 @@
    "trades": 7,
    "open": 7,
    "since": "2026-10-30T21:00:00Z",
-   "as_of": "2026-10-31T09:10:01Z",
+   "as_of": "2026-10-31T09:25:01Z",
    "stopped": null,
    "wins": 0,
    "losses": 0,
@@ -1020,7 +1020,7 @@
    "Strategy J": 0.0
   },
   {
-   "t": "2026-10-31T09:17:00Z",
+   "t": "2026-10-31T09:32:15Z",
    "Strategy A": -2.73,
    "Strategy B": 3.24,
    "Strategy C": 0.0,
