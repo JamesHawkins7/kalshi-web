@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T05:02:15Z",
+ "updated": "2026-11-05T05:17:02Z",
  "note": "Paper trading only: no real orders are placed and no real money is at risk. P&L is hypothetical, in US dollars, after modeled fees, since each strategy's paper record began.",
  "strategies": [
   {
@@ -99,11 +99,11 @@
   },
   {
    "label": "Strategy B",
-   "pnl": 3.75,
+   "pnl": 3.71,
    "trades": 2,
    "open": 2,
    "since": "2026-10-21T19:38:00Z",
-   "as_of": "2026-11-04T21:00:00Z",
+   "as_of": "2026-11-05T05:00:00Z",
    "stopped": null,
    "wins": null,
    "losses": null,
@@ -187,7 +187,7 @@
     },
     {
      "d": "2026-11-05",
-     "eq": 3.75,
+     "eq": 3.71,
      "n": 0
     }
    ]
@@ -388,7 +388,7 @@
    "trades": 2,
    "open": 0,
    "since": "2026-10-14T15:09:07Z",
-   "as_of": "2026-11-05T05:01:48Z",
+   "as_of": "2026-11-05T05:16:53Z",
    "stopped": null,
    "wins": 2,
    "losses": 0,
@@ -1018,7 +1018,7 @@
    "trades": 79,
    "open": 6,
    "since": "2026-10-30T21:00:00Z",
-   "as_of": "2026-11-05T04:55:02Z",
+   "as_of": "2026-11-05T05:10:04Z",
    "stopped": null,
    "wins": 29,
    "losses": 44,
@@ -2765,9 +2765,9 @@
    "Strategy J": -142.04
   },
   {
-   "t": "2026-11-05T05:02:15Z",
+   "t": "2026-11-05T05:17:02Z",
    "Strategy A": 0.65,
-   "Strategy B": 3.75,
+   "Strategy B": 3.71,
    "Strategy C": 0.0,
    "Strategy D": 0.0,
    "Strategy E": 3.79,
